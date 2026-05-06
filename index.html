@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>💙 SPECIAL OFFER ZONE | 9 Exclusive Deals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at 10% 20%, #0a0f2a, #04071a);
+      font-family: 'Inter', system-ui, sans-serif;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    .main-container {
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    /* header section */
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #60a5fa, #818cf8, #c084fc);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero h1 i {
+      background: none;
+      -webkit-text-fill-color: #60a5fa;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      color: #a0a8c0;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+    /* stats card */
+    .stats-card {
+      background: rgba(20, 24, 54, 0.65);
+      backdrop-filter: blur(12px);
+      border-radius: 2rem;
+      padding: 1rem 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(96, 165, 250, 0.3);
+    }
+
+    .total-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #E0D6FF;
+      font-weight: 600;
+    }
+
+    .total-box i {
+      font-size: 2rem;
+      color: #60a5fa;
+    }
+
+    .total-number {
+      background: #0a0e2a;
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 2rem;
+      font-weight: 800;
+      color: #60a5fa;
+      font-family: monospace;
+      letter-spacing: 2px;
+      border: 1px solid #60a5fa;
+    }
+
+    .legend {
+      display: flex;
+      gap: 20px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: #c4b5fd;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #3b2a6b;
+    }
+
+    .dot.active {
+      background: #10b981;
+      box-shadow: 0 0 6px #34d399;
+    }
+
+    /* section label */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 2rem 0 1rem 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid rgba(96, 165, 250, 0.4);
+    }
+
+    .section-title i {
+      font-size: 1.5rem;
+      color: #60a5fa;
+    }
+
+    .section-title h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #f0ecff;
+    }
+
+    .badge {
+      background: #818cf8;
+      padding: 2px 12px;
+      border-radius: 50px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #0a0a1a;
+    }
+
+    /* button grid */
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    .offer-btn {
+      background: linear-gradient(105deg, #161c3a, #0e1230);
+      border: 1px solid #2f2b6b;
+      border-radius: 60px;
+      padding: 12px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      color: #dddaff;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .offer-btn:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(105deg, #1f2a55, #12183f);
+      border-color: #60a5fa;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+    }
+
+    .btn-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+    }
+
+    .btn-left i {
+      font-size: 1.2rem;
+      color: #60a5fa;
+      min-width: 28px;
+      text-align: center;
+    }
+
+    .btn-left span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .click-count {
+      background: #00000055;
+      border-radius: 40px;
+      padding: 3px 12px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #60a5fa;
+      border: 0.5px solid #60a5fa;
+      font-family: monospace;
+    }
+
+    .offer-btn.clicked {
+      background: linear-gradient(105deg, #0f462f, #0a2c24);
+      border-color: #10b981;
+    }
+
+    .offer-btn.clicked .click-count {
+      background: #064e3b;
+      color: #60a5fa;
+    }
+
+    /* reset button */
+    .reset-btn {
+      background: rgba(96, 165, 250, 0.15);
+      border: 1px solid #60a5fa;
+      border-radius: 50px;
+      padding: 6px 18px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #a5d8ff;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .reset-btn:hover {
+      background: #60a5fa30;
+      color: #ffffff;
+      border-color: #818cf8;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      color: #5b5d8a;
+      font-size: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      .stats-card { flex-direction: column; align-items: stretch; padding: 1rem; }
+      .btn-grid { grid-template-columns: 1fr; }
+      .offer-btn { padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+<div class="main-container">
+  <div class="hero">
+    <h1><i class="fas fa-crown"></i> SPECIAL OFFER ZONE <i class="fas fa-gem"></i></h1>
+    <p>9 Live Deals · Click & Claim Your Reward</p>
+  </div>
+
+  <div class="stats-card">
+    <div class="total-box">
+      <i class="fas fa-chart-line"></i>
+      <span>Total Clicks</span>
+      <div class="total-number" id="totalClicks">0</div>
+    </div>
+    <div class="legend">
+      <span><i class="dot"></i> Pending</span>
+      <span><i class="dot active"></i> Clicked</span>
+    </div>
+  </div>
+
+  <!-- ========= GROUP 1 : FLASH OFFERS ========= -->
+  <div class="section-title">
+    <i class="fas fa-bolt"></i>
+    <h2>Flash Offers</h2>
+    <div class="badge">Trending</div>
+  </div>
+  <div class="btn-grid" id="group1"></div>
+
+  <!-- ========= GROUP 2 : ELITE PICKS ========= -->
+  <div class="section-title">
+    <i class="fas fa-crown"></i>
+    <h2>Elite Picks</h2>
+    <div class="badge">Premium</div>
+  </div>
+  <div class="btn-grid" id="group2"></div>
+
+  <!-- ========= GROUP 3 : MEGA DEALS ========= -->
+  <div class="section-title">
+    <i class="fas fa-gem"></i>
+    <h2>Mega Deals</h2>
+    <div class="badge">Limited</div>
+  </div>
+  <div class="btn-grid" id="group3"></div>
+
+  <footer>
+    <span><i class="far fa-clock"></i> 9 Live Offers · Regularly Updated</span>
+    <div class="reset-btn" id="resetAllBtn"><i class="fas fa-trash-alt"></i> Reset Counter</div>
+  </footer>
+</div>
+
+<script>
+  // ===================== 9 Offers with your new links =====================
+  const OFFERS = [
+    // Group 1: Flash Offers (3 offers)
+    { name: "⚡ Thunder Strike", icon: "bolt", link: "https://breedsmuteexams.com/w9zsv7bxy?key=5393084c07214d1b669a52fcff352e31" },
+    { name: "🚀 Galaxy Launch", icon: "rocket", link: "https://breedsmuteexams.com/eepqxiza?key=8b7124e35667f7d5d2589b2093161fc1" },
+    { name: "🎁 Surprise Chest", icon: "gift", link: "https://breedsmuteexams.com/jg9e9n3wk?key=f450fe16bb286a1ac182f061139e86b2" },
+    
+    // Group 2: Elite Picks (3 offers)
+    { name: "👑 Imperial Access", icon: "mug-hot", link: "https://breedsmuteexams.com/edush26xrs?key=d3825e709486d83b9b75eaed6a004773" },
+    { name: "📱 Titan Pro", icon: "mobile-alt", link: "https://breedsmuteexams.com/g6120nr1q3?key=607a06ff1ea86212eaada20d1ab8e121" },
+    { name: "🏎️ Velocity X", icon: "car", link: "https://breedsmuteexams.com/vqe8m4h8?key=f6dcfb87ab6d034a68faac524acf6f1f" },
+    
+    // Group 3: Mega Deals (3 offers)
+    { name: "💎 Sapphire Gem", icon: "gem", link: "https://breedsmuteexams.com/stiwv81bzb?key=3061f35be38c441ed6fb68fe9865f92e" },
+    { name: "₿ Bitcoin Vault", icon: "bitcoin", link: "https://breedsmuteexams.com/ghmbpuyc8?key=d5bd7bcfd5063b4f1169eef03bc03611" },
+    { name: "🪙 Gold Treasure", icon: "coins", link: "https://breedsmuteexams.com/rvtafxxc?key=c546917e97eb02eda09844be6a83b3c3" }
+  ];
+
+  // Group splits: 3 + 3 + 3 = 9
+  const GROUP_OFFERS = {
+    group1: OFFERS.slice(0, 3),
+    group2: OFFERS.slice(3, 6),
+    group3: OFFERS.slice(6, 9)
+  };
+
+  let clickCounts = new Array(9).fill(0);
+  const STORAGE_KEY = "clickTracker9Blue";
+
+  function loadCounts() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        let arr = JSON.parse(saved);
+        if (arr.length === 9) clickCounts = arr;
+      } catch(e) {}
+    }
+  }
+
+  function saveCounts() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(clickCounts));
+  }
+
+  function updateTotalDisplay() {
+    const total = clickCounts.reduce((a,b) => a+b, 0);
+    document.getElementById("totalClicks").innerText = total;
+  }
+
+  function renderButton(offer, idx) {
+    const count = clickCounts[idx];
+    const isClicked = count > 0;
+    const btn = document.createElement("a");
+    btn.href = offer.link;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+    btn.className = "offer-btn" + (isClicked ? " clicked" : "");
+    btn.setAttribute("data-idx", idx);
+    
+    btn.innerHTML = `
+      <div class="btn-left">
+        <i class="fas fa-${offer.icon}"></i>
+        <span>${offer.name}</span>
+      </div>
+      <div class="click-count">${count}</div>
+    `;
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      clickCounts[idx] += 1;
+      saveCounts();
+      updateTotalDisplay();
+      renderGroups();
+    });
+
+    return btn;
+  }
+
+  function renderGroups() {
+    const group1Container = document.getElementById("group1");
+    const group2Container = document.getElementById("group2");
+    const group3Container = document.getElementById("group3");
+    group1Container.innerHTML = "";
+    group2Container.innerHTML = "";
+    group3Container.innerHTML = "";
+
+    let globalIdx = 0;
+    for (let i = 0; i < GROUP_OFFERS.group1.length; i++) {
+      group1Container.appendChild(renderButton(GROUP_OFFERS.group1[i], globalIdx++));
+    }
+    for (let i = 0; i < GROUP_OFFERS.group2.length; i++) {
+      group2Container.appendChild(renderButton(GROUP_OFFERS.group2[i], globalIdx++));
+    }
+    for (let i = 0; i < GROUP_OFFERS.group3.length; i++) {
+      group3Container.appendChild(renderButton(GROUP_OFFERS.group3[i], globalIdx++));
+    }
+    updateTotalDisplay();
+  }
+
+  function resetCounters() {
+    for (let i = 0; i < clickCounts.length; i++) clickCounts[i] = 0;
+    saveCounts();
+    renderGroups();
+  }
+
+  document.getElementById("resetAllBtn").addEventListener("click", resetCounters);
+  loadCounts();
+  renderGroups();
+</script>
+</body>
+</html>
