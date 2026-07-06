@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Reward Gateway | 30 Instant Access Deals</title>
-  <meta name="description" content="Access your exclusive reward collection. 30 live offers across 10 tiers. Claim and enjoy instantly.">
+  <title>Prime Loot Hub | 30 Exclusive Rewards</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
     }
 
     body {
-      background: radial-gradient(circle at 20% 30%, #0a1f0a, #0a0c1a, #02040f);
+      background: radial-gradient(circle at 80% 10%, #0a0c1a, #02040f);
       font-family: 'Inter', system-ui, sans-serif;
       padding: 2rem 1.5rem;
       min-height: 100vh;
@@ -42,7 +41,7 @@
       position: sticky;
       top: 2rem;
       align-self: flex-start;
-      background: rgba(20, 25, 35, 0.85);
+      background: rgba(15, 20, 35, 0.75);
       backdrop-filter: blur(16px);
       border-radius: 2rem;
       padding: 1.5rem 1rem;
@@ -63,7 +62,7 @@
     }
 
     .level-sidebar h3 i {
-      color: #4ade80;
+      color: #fb923c;
     }
 
     .triggers-grid {
@@ -91,7 +90,7 @@
 
     .level-btn i {
       font-size: 0.75rem;
-      color: #4ade80;
+      color: #fb923c;
     }
 
     .level-btn:hover {
@@ -107,18 +106,18 @@
     }
 
     .level-btn.active i {
-      color: #fef3c7;
+      color: #fff0e0;
     }
 
     .hero {
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .hero h1 {
       font-size: 2.2rem;
       font-weight: 800;
-      background: linear-gradient(135deg, #fb923c, #f97316, #4ade80, #fdba74);
+      background: linear-gradient(135deg, #fb923c, #f97316, #fdba74);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -128,12 +127,19 @@
       gap: 12px;
       flex-wrap: nowrap;
       white-space: nowrap;
+      justify-content: center;
+    }
+
+    .hero h1 i {
+      background: none;
+      -webkit-text-fill-color: #fb923c;
+      font-size: 2rem;
     }
 
     @media (max-width: 550px) {
       .hero h1 {
-        font-size: 1.5rem;
-        gap: 6px;
+        font-size: 1.4rem;
+        gap: 8px;
       }
       .hero h1 i {
         font-size: 1.3rem;
@@ -142,27 +148,11 @@
     @media (max-width: 400px) {
       .hero h1 {
         font-size: 1.2rem;
-        gap: 5px;
+        gap: 6px;
       }
       .hero h1 i {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
-    }
-
-    .hero h1 i {
-      background: none;
-      -webkit-text-fill-color: #f97316;
-      font-size: 2rem;
-    }
-
-    .bottom-description {
-      text-align: center;
-      margin: 1rem 0 1.5rem 0;
-      color: #86efac;
-      font-size: 0.9rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .stats-card {
@@ -177,7 +167,7 @@
       gap: 15px;
       margin-top: 2rem;
       margin-bottom: 0;
-      border: 1px solid rgba(74, 222, 128, 0.4);
+      border: 1px solid rgba(249, 115, 22, 0.4);
     }
 
     .total-box {
@@ -190,7 +180,7 @@
 
     .total-box i {
       font-size: 2rem;
-      color: #4ade80;
+      color: #fb923c;
     }
 
     .total-number {
@@ -199,10 +189,10 @@
       border-radius: 50px;
       font-size: 2rem;
       font-weight: 800;
-      color: #fbbf24;
+      color: #fb923c;
       font-family: monospace;
       letter-spacing: 2px;
-      border: 1px solid #4ade80;
+      border: 1px solid #f97316;
     }
 
     .legend {
@@ -236,12 +226,12 @@
       gap: 12px;
       margin: 1.5rem 0 1rem 0;
       padding-bottom: 6px;
-      border-bottom: 2px solid rgba(251, 146, 60, 0.5);
+      border-bottom: 2px solid rgba(249, 115, 22, 0.5);
     }
 
     .section-title i {
       font-size: 1.5rem;
-      color: #4ade80;
+      color: #fb923c;
     }
 
     .section-title h2 {
@@ -261,9 +251,9 @@
 
     .btn-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 14px;
-      max-height: 52vh;
+      max-height: 50vh;
       overflow-y: auto;
       padding-right: 8px;
     }
@@ -276,7 +266,7 @@
       border-radius: 10px;
     }
     .btn-grid::-webkit-scrollbar-thumb {
-      background: #4ade80;
+      background: #fb923c;
       border-radius: 10px;
     }
 
@@ -300,25 +290,17 @@
     .offer-btn:hover {
       transform: translateY(-3px);
       background: linear-gradient(105deg, #1c2340, #12172e);
-      border-color: #4ade80;
+      border-color: #fb923c;
       box-shadow: 0 8px 18px rgba(0,0,0,0.4);
     }
 
     .offer-btn.disabled {
-      opacity: 0.7;
+      opacity: 0.6;
       cursor: not-allowed;
       pointer-events: none;
       background: linear-gradient(105deg, #1a2a1a, #0f1f0f);
       border-color: #4a6a4a;
       transform: none;
-    }
-    .offer-btn.disabled:hover {
-      transform: none;
-      box-shadow: none;
-    }
-    .offer-btn.disabled .click-count {
-      background: #1a3a1a;
-      color: #6a9e6a;
     }
 
     .btn-left {
@@ -326,11 +308,10 @@
       align-items: center;
       gap: 10px;
       overflow: hidden;
-      flex: 1;
     }
     .btn-left i {
       font-size: 1.2rem;
-      color: #f97316;
+      color: #fb923c;
       min-width: 28px;
       text-align: center;
     }
@@ -345,11 +326,9 @@
       padding: 3px 12px;
       font-size: 0.8rem;
       font-weight: 800;
-      color: #4ade80;
-      border: 0.5px solid #4ade80;
+      color: #fdba74;
+      border: 0.5px solid #fb923c;
       font-family: monospace;
-      min-width: 50px;
-      text-align: center;
     }
     .offer-btn.clicked {
       background: linear-gradient(105deg, #0f3b2a, #0a261c);
@@ -377,13 +356,13 @@
     .reset-btn:hover {
       background: #f9731630;
       color: #ffffff;
-      border-color: #4ade80;
+      border-color: #fb923c;
     }
 
     footer {
       margin-top: 1.5rem;
       text-align: center;
-      color: #6b9e6b;
+      color: #6b7280;
       font-size: 0.75rem;
       display: flex;
       justify-content: space-between;
@@ -397,7 +376,7 @@
       .level-sidebar { display: none; }
       .mobile-tier-bar {
         display: block;
-        background: rgba(20, 25, 35, 0.85);
+        background: rgba(15, 20, 35, 0.85);
         backdrop-filter: blur(16px);
         border-radius: 1.5rem;
         padding: 1rem;
@@ -434,7 +413,7 @@
         justify-content: center;
         gap: 4px;
       }
-      .mobile-tier-btn i { font-size: 0.65rem; color: #4ade80; }
+      .mobile-tier-btn i { font-size: 0.65rem; color: #fb923c; }
       .mobile-tier-btn.active {
         background: linear-gradient(105deg, #ea580c, #c2410c);
         border-color: #fdba74;
@@ -452,16 +431,16 @@
 <div class="main-container">
   <div class="content-area">
     <div class="hero">
-      <h1><i class="fas fa-crown"></i> REWARD GATEWAY <i class="fas fa-gem"></i></h1>
+      <h1><i class="fas fa-crown"></i> PRIME LOOT HUB <i class="fas fa-gem"></i></h1>
     </div>
 
     <div class="mobile-tier-bar" id="mobileTierBar">
-      <h3><i class="fas fa-layer-group"></i> Select Your Tier</h3>
+      <h3><i class="fas fa-layer-group"></i> Choose Tier</h3>
       <div class="mobile-triggers" id="mobileTriggers"></div>
     </div>
 
     <div class="section-title" id="dynamicSectionTitle">
-      <i class="fas fa-chart-simple"></i>
+      <i class="fas fa-layer-group"></i>
       <h2 id="levelName">Tier 1 · Starter Pack</h2>
       <div class="badge" id="levelBadge">3 Offers</div>
     </div>
@@ -479,76 +458,71 @@
       </div>
     </div>
 
-    <div class="bottom-description">
-      <i class="fas fa-shield-alt"></i> Discover handpicked rewards from our verified selection. Each tier features fresh offers ready to explore.
-    </div>
-
     <footer>
-      <span><i class="far fa-clock"></i> 30 Active Offers · 10 Exclusive Tiers · Instant Access</span>
+      <span><i class="far fa-clock"></i> 30 Live Rewards · 10 Exclusive Tiers · Click & Collect</span>
       <div class="reset-btn" id="resetAllBtn"><i class="fas fa-trash-alt"></i> Reset Counters</div>
     </footer>
   </div>
 
   <div class="level-sidebar">
-    <h3><i class="fas fa-layer-group"></i> Select Your Tier</h3>
+    <h3><i class="fas fa-layer-group"></i> Choose Tier</h3>
     <div class="triggers-grid" id="desktopTriggers"></div>
   </div>
 </div>
 
 <script>
-  // ========== 30 NEW t.co LINKS (as provided) ==========
-  const FULL_LINKS_SET = [
-    "https://t.co/pm1x9zh7q7",
-    "https://t.co/jDzGO3WwCC",
-    "https://t.co/AgdPqjRtNs",
-    "https://t.co/txjgYz8C8g",
-    "https://t.co/YiNA3T4a1y",
-    "https://t.co/yAfIovkzlN",
-    "https://t.co/TstidbZZCy",
-    "https://t.co/FjzkYj7uRc",
-    "https://t.co/s8rTiwgOJO",
-    "https://t.co/9wPmej86Ur",
-    "https://t.co/t8IdIPDiu1",
-    "https://t.co/adtqJRm6LF",
-    "https://t.co/Pkl3a8jbw2",
-    "https://t.co/U5r7iO5g9J",
-    "https://t.co/R3zZ16WSr3",
-    "https://t.co/hOJjvT2U4Q",
-    "https://t.co/qeZNoJTUUr",
-    "https://t.co/EwM3rrXBoZ",
-    "https://t.co/zSeLmaagHC",
-    "https://t.co/I4Bnj37cu1",
-    "https://t.co/FrVcdM2SUP",
-    "https://t.co/k4gMoWgKSS",
-    "https://t.co/xDHeddLg4m",
-    "https://t.co/4bMzYSv2Av",
-    "https://t.co/KNOkuT1veL",
-    "https://t.co/qAuU1Qkse9",
-    "https://t.co/zsANLvMweD",
-    "https://t.co/F9p0Lkx6hu",
-    "https://t.co/dQx9a4bNqC",
-    "https://t.co/3fcxchnXS5"
+  // ==================== 30 NEW LINKS (astrayentireillegimateillegimate.com) ====================
+  const ALL_LINKS = [
+    "https://astrayentireillegimateillegimate.com/uzn7ykfxdm?key=183cbee5ff42db92fbdb85c244f67cda",
+    "https://astrayentireillegimateillegimate.com/u7kvbzim?key=28a0ef952f0df27f5bfb3e9d4f091387",
+    "https://astrayentireillegimateillegimate.com/gtxd1f9cc?key=587881e28554cc30c1372059b88825ff",
+    "https://astrayentireillegimateillegimate.com/t5tzzpes?key=b38515b90f3f1a2de0b0d4726fd24dcd",
+    "https://astrayentireillegimateillegimate.com/zdq2friyvd?key=eb39811fa6c6ba6f917f1391631bc580",
+    "https://astrayentireillegimateillegimate.com/rjjqgu99n?key=5a9ae03f6f61e2025c78dd2240a2c20b",
+    "https://astrayentireillegimateillegimate.com/km0gvg3vn?key=63d595909478224adb4971b10f136ba8",
+    "https://astrayentireillegimateillegimate.com/i6ehgwww?key=967a8d76b533c322e0214d759f0f44d8",
+    "https://astrayentireillegimateillegimate.com/c61rvxxc?key=b35272bda195d7404c5f270b510713c1",
+    "https://astrayentireillegimateillegimate.com/b6muigu1f8?key=c70bdb0d1b85669f5f959daad0ad7348",
+    "https://astrayentireillegimateillegimate.com/srk3g63yt5?key=c5d40cd41e1eb64a7fe2b86a77a88f0b",
+    "https://astrayentireillegimateillegimate.com/gzcezdy7x?key=e326b042e957787f06abd193e290d6f4",
+    "https://astrayentireillegimateillegimate.com/cb4rzd2u?key=3364e0f48f4ee267d60a4aaa1a621613",
+    "https://astrayentireillegimateillegimate.com/xq1mtsjge?key=ee4c7482149aef51394aefbff4921cfe",
+    "https://astrayentireillegimateillegimate.com/tibvqt5nx1?key=bbbcd76652ece822005c01fec8690962",
+    "https://astrayentireillegimateillegimate.com/tfbyf5ybr?key=ffaf7731a5c7fc0b98971faa5adc0b2b",
+    "https://astrayentireillegimateillegimate.com/vue7mza8?key=4191fbf6d72a0dc15eda0d2e457525b8",
+    "https://astrayentireillegimateillegimate.com/r9q50qix?key=87bf7ed5535de3e642c7fe1255706900",
+    "https://astrayentireillegimateillegimate.com/axn23jkk?key=e06620dbb35e4012cf1afb1ec1e25ef7",
+    "https://astrayentireillegimateillegimate.com/x7f9dhgh?key=267731df1cb34d93a27217e83692df2b",
+    "https://astrayentireillegimateillegimate.com/uty4rddf71?key=977bfa24c8a9bd7b5b8c8daf1a67f206",
+    "https://astrayentireillegimateillegimate.com/w0znf96e?key=512d3908d6e9a66afe428ec53126b87e",
+    "https://astrayentireillegimateillegimate.com/n4bjcjaw6?key=3140038f1217d0dd94ef083d55820546",
+    "https://astrayentireillegimateillegimate.com/mrygctqa?key=8f6fa804b8f6798c12da7da5947dc2fe",
+    "https://astrayentireillegimateillegimate.com/hqdcmnfp?key=b1546bcda38fff8110634c1c1212d4da",
+    "https://astrayentireillegimateillegimate.com/nsy0n53ey4?key=3815f9835404cb40b4dddf151fc2cc8e",
+    "https://astrayentireillegimateillegimate.com/ay33qq1k8?key=5ce00bb696c6c2d63522493d14318a74",
+    "https://astrayentireillegimateillegimate.com/hgvqqt9tf8?key=4629ac59d310075089ef02aca6ab5d68",
+    "https://astrayentireillegimateillegimate.com/xw0qr85j34?key=fd9196a2aabd1e64373829d1aecb6d1d",
+    "https://astrayentireillegimateillegimate.com/dri7t73dk?key=36214b10f570a39482af6edc75e25c08"
   ];
 
-  // ========== FRESH COMPLIANT OFFER NAMES (30 unique, safe, neutral yet premium) ==========
-  // All names are descriptive and follow standard promotional guidelines.
-  const COMPLIANT_OFFER_NAMES = [
-    "✨ Digital Access Pass", "📦 Quick Start Bundle", "🎁 Surprise Reward Kit", "⚡ Instant Boost Voucher", "💎 Collector's Item",
-    "🌟 Limited Edition Drop", "🏆 Achievement Unlock", "🚀 Fast Track Bonus", "🎯 Precision Offer Pack", "🔑 Insider Access Key",
-    "📀 Digital Loot Box", "🕹️ Gamer Perks Pack", "🎧 Streaming Perks Bundle", "📱 Mobile Bonus Pack", "💡 Smart Reward Token",
-    "🛡️ Secure Plus Vault", "📚 Info Access Pass", "🎨 Creator Bonus Kit", "⚙️ Utility Upgrade Pack", "🔔 Flash Alert Reward",
-    "🌐 Web Navigator Pack", "🧩 Mystery Piece Offer", "🎵 Audio Perks Bundle", "📸 Snapshot Reward", "🕶️ Stealth Bonus Pack",
-    "🍀 Lucky Spin Token", "🧭 Guided Access Pass", "🎲 Dice Roll Bonus", "🃏 Wild Reward Card", "🎈 Celebration Pack"
+  // ========== USER-FRIENDLY & AD-COMPLIANT OFFER NAMES (30 unique, gentle and clear) ==========
+  const OFFER_NAMES = [
+    "🌟 Daily Prime Gift", "🎁 Simple Bonus Pack", "💎 Easy Reward Gem", "⚡ Quick Access Pass", "🍀 Lucky Prime Token",
+    "🏆 Friendly Milestone", "🚀 Smooth Boost Voucher", "🎯 Clear Bonus Target", "🔑 Gentle Vault Key", "📀 Basic Digital Pack",
+    "🕹️ Casual Gamer Perk", "🎧 Calm Audio Reward", "📱 Light Mobile Bonus", "💡 Bright Daily Deal", "🛡️ Cozy Secure Plus",
+    "📚 Warm Insider Pass", "🎨 Kind Creator Kit", "⚙️ Simple Utility Perk", "🔔 Soft Flash Alert", "🌐 Gentle Web Access",
+    "🧩 Friendly Mystery Tile", "🎵 Peaceful Sound Pack", "📸 Easy Snapshot", "🕶️ Quiet Stealth Perk", "🌿 Pure Lucky Clover",
+    "🧭 Kind Navigator Bonus", "🎲 Simple Dice Reward", "🃏 Gentle Wild Card", "🎈 Soft Celebration Pack", "⭐ Pure Prime Bonus"
   ];
 
-  // Matching icon set (FontAwesome names - all safe)
-  const ICON_SET = [
-    "star", "box", "gift", "bolt", "gem", "sun", "trophy", "rocket", "bullseye", "key",
-    "database", "gamepad", "headphones", "mobile-alt", "lightbulb", "shield-alt", "book", "palette", "cogs", "bell",
-    "globe", "puzzle-piece", "music", "camera", "sunglasses", "leaf", "compass", "dice-d6", "star-of-life", "balloon"
+  // Matching icons for each offer
+  const OFFER_ICONS = [
+    "star", "gift", "gem", "bolt", "leaf", "trophy", "rocket", "bullseye", "key", "database",
+    "gamepad", "headphones", "mobile-alt", "lightbulb", "shield-alt", "book", "palette", "cogs", "bell", "globe",
+    "puzzle-piece", "music", "camera", "sunglasses", "leaf", "compass", "dice-d6", "star-of-life", "balloon", "crown"
   ];
 
-  // Shuffle array (Fisher-Yates)
+  // Shuffle array utility (Fisher-Yates) for unique order per user
   function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -557,96 +531,82 @@
     return arr;
   }
 
-  // Persistent random ordering for each user (remix offers & names)
-  function getPersistentOfferOrder() {
-    const ORDER_KEY = "rewardGatewayOrderV4";
+  // Get persistent shuffled order for this user
+  function getShuffledIndices() {
+    const ORDER_KEY = "primeLootHubShuffledOrderV1";
     const saved = localStorage.getItem(ORDER_KEY);
     if (saved) {
       const parsed = JSON.parse(saved);
       if (parsed.length === 30) return parsed;
     }
-    const order = Array.from({ length: 30 }, (_, i) => i);
-    shuffleArray(order);
-    localStorage.setItem(ORDER_KEY, JSON.stringify(order));
-    return order;
+    const indices = Array.from({ length: 30 }, (_, i) => i);
+    shuffleArray(indices);
+    localStorage.setItem(ORDER_KEY, JSON.stringify(indices));
+    return indices;
   }
 
-  // Build mixed offers based on persistent shuffle
-  function buildShuffledOfferList() {
-    const order = getPersistentOfferOrder();
-    const combined = [];
-    for (let i = 0; i < 30; i++) {
-      const idx = order[i];
-      combined.push({
-        name: COMPLIANT_OFFER_NAMES[idx % COMPLIANT_OFFER_NAMES.length],
-        icon: ICON_SET[idx % ICON_SET.length],
-        link: FULL_LINKS_SET[idx],
-        globalId: idx
+  const shuffledOrder = getShuffledIndices();
+
+  // Build tier offers using shuffled order (3 per tier)
+  const TIER_OFFERS = {};
+  for (let tier = 1; tier <= 10; tier++) {
+    TIER_OFFERS[tier] = [];
+    for (let j = 0; j < 3; j++) {
+      const globalIdx = shuffledOrder[(tier - 1) * 3 + j];
+      TIER_OFFERS[tier].push({
+        name: OFFER_NAMES[globalIdx % OFFER_NAMES.length],
+        icon: OFFER_ICONS[globalIdx % OFFER_ICONS.length],
+        link: ALL_LINKS[globalIdx],
+        originalIndex: globalIdx
       });
     }
-    return combined;
   }
 
-  const shuffledMasterList = buildShuffledOfferList();
+  const TOTAL_OFFERS = 30;
+  let clickCounts = new Array(TOTAL_OFFERS).fill(0);
+  let claimedStatus = new Array(TOTAL_OFFERS).fill(false);
+  const STORAGE_KEY = "primeLootHubClicksV1";
+  const CLAIMED_KEY = "primeLootHubClaimedV1";
 
-  // Split into 10 tiers (3 offers each)
-  const TIERS_MAP = {};
-  for (let tier = 1; tier <= 10; tier++) {
-    TIERS_MAP[tier] = shuffledMasterList.slice((tier - 1) * 3, tier * 3);
-  }
-
-  // State management
-  const TOTAL = 30;
-  let clickCounts = new Array(TOTAL).fill(0);
-  let claimedStatus = new Array(TOTAL).fill(false);
-  const CLICKS_STORAGE = "rewardClicksV4";
-  const CLAIM_STORAGE = "rewardClaimedV4";
-
-  function loadPersistentState() {
-    const savedClicks = localStorage.getItem(CLICKS_STORAGE);
-    if (savedClicks) {
+  function loadCounts() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
       try {
-        const parsed = JSON.parse(savedClicks);
-        if (parsed.length === TOTAL) clickCounts = parsed;
+        let arr = JSON.parse(saved);
+        if (arr.length === TOTAL_OFFERS) clickCounts = arr;
       } catch(e) {}
     }
-    const savedClaim = localStorage.getItem(CLAIM_STORAGE);
-    if (savedClaim) {
+    const savedClaimed = localStorage.getItem(CLAIMED_KEY);
+    if (savedClaimed) {
       try {
-        const parsedClaim = JSON.parse(savedClaim);
-        if (parsedClaim.length === TOTAL) claimedStatus = parsedClaim;
+        let arr = JSON.parse(savedClaimed);
+        if (arr.length === TOTAL_OFFERS) claimedStatus = arr;
       } catch(e) {}
     }
   }
-
-  function persistState() {
-    localStorage.setItem(CLICKS_STORAGE, JSON.stringify(clickCounts));
-    localStorage.setItem(CLAIM_STORAGE, JSON.stringify(claimedStatus));
+  function saveCounts() { 
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(clickCounts));
+    localStorage.setItem(CLAIMED_KEY, JSON.stringify(claimedStatus));
   }
-
   function updateTotalDisplay() {
-    const total = clickCounts.reduce((sum, val) => sum + val, 0);
+    const total = clickCounts.reduce((a,b)=>a+b,0);
     document.getElementById("totalClicks").innerText = total;
   }
 
-  let activeTier = 1;
+  let currentTier = 1;
 
   function renderCurrentTier() {
-    const gridContainer = document.getElementById("offersGrid");
-    if (!gridContainer) return;
-    gridContainer.innerHTML = "";
-    const offers = TIERS_MAP[activeTier];
-    const tierNamesMap = {
-      1: "Starter Pack", 2: "Bronze Tier", 3: "Silver Tier", 4: "Gold Tier", 5: "Platinum Tier",
-      6: "Emerald Tier", 7: "Ruby Tier", 8: "Sapphire Tier", 9: "Diamond Tier", 10: "Ultimate Vault"
-    };
+    const grid = document.getElementById("offersGrid");
+    grid.innerHTML = "";
+    const offers = TIER_OFFERS[currentTier];
+    const tierNames = ["Starter Pack", "Bronze Tier", "Silver Tier", "Gold Tier", "Platinum Tier", "Emerald Tier", "Ruby Tier", "Sapphire Tier", "Diamond Tier", "Ultimate Vault"];
     const levelTitle = document.getElementById("levelName");
     const levelBadge = document.getElementById("levelBadge");
-    if (levelTitle) levelTitle.innerText = `Tier ${activeTier} · ${tierNamesMap[activeTier]}`;
-    if (levelBadge) levelBadge.innerText = "3 Offers";
+    levelTitle.innerText = `Tier ${currentTier} · ${tierNames[currentTier-1]}`;
+    levelBadge.innerText = "3 Offers";
 
     offers.forEach((offer) => {
-      const globalIdx = offer.globalId;
+      const globalIdx = offer.originalIndex;
       const count = clickCounts[globalIdx];
       const isClaimed = claimedStatus[globalIdx];
       const hasClick = count > 0;
@@ -662,13 +622,7 @@
       btn.className = `offer-btn ${hasClick ? "clicked" : ""} ${isClaimed ? "disabled" : ""}`;
       btn.setAttribute("data-global", globalIdx);
       
-      btn.innerHTML = `
-        <div class="btn-left">
-          <i class="fas fa-${offer.icon}"></i>
-          <span>${offer.name}</span>
-        </div>
-        <div class="click-count">${count}</div>
-      `;
+      btn.innerHTML = `<div class="btn-left"><i class="fas fa-${offer.icon}"></i><span>${offer.name}</span></div><div class="click-count">${count}</div>`;
       
       if (!isClaimed) {
         btn.addEventListener("click", (e) => {
@@ -676,12 +630,14 @@
           e.stopPropagation();
           if (claimedStatus[globalIdx]) return false;
           
+          // One-time claim: mark claimed and increment
           claimedStatus[globalIdx] = true;
           clickCounts[globalIdx] += 1;
-          persistState();
+          saveCounts();
           updateTotalDisplay();
-          renderCurrentTier();
+          renderCurrentTier();  // re-render to disable this button
           
+          // Open link in new tab
           window.open(offer.link, "_blank");
           return false;
         });
@@ -690,72 +646,59 @@
         btn.onclick = (e) => { e.preventDefault(); return false; };
       }
       
-      gridContainer.appendChild(btn);
+      grid.appendChild(btn);
     });
   }
 
-  function setActiveTier(tierNum) {
-    activeTier = tierNum;
+  function setActiveTier(tier) {
+    currentTier = tier;
     document.querySelectorAll(".level-btn").forEach(btn => {
-      const val = parseInt(btn.getAttribute("data-level"));
-      if (val === tierNum) btn.classList.add("active");
+      if (parseInt(btn.getAttribute("data-level")) === tier) btn.classList.add("active");
       else btn.classList.remove("active");
     });
     document.querySelectorAll(".mobile-tier-btn").forEach(btn => {
-      const val = parseInt(btn.getAttribute("data-level"));
-      if (val === tierNum) btn.classList.add("active");
+      if (parseInt(btn.getAttribute("data-level")) === tier) btn.classList.add("active");
       else btn.classList.remove("active");
     });
     renderCurrentTier();
   }
 
-  function resetAllCountersAndClaims() {
-    for (let i = 0; i < TOTAL; i++) {
+  function resetCounters() {
+    for (let i = 0; i < TOTAL_OFFERS; i++) {
       clickCounts[i] = 0;
       claimedStatus[i] = false;
     }
-    persistState();
+    saveCounts();
     updateTotalDisplay();
     renderCurrentTier();
   }
 
-  function buildTierTriggers() {
+  function buildTriggers() {
     const desktopContainer = document.getElementById("desktopTriggers");
     const mobileContainer = document.getElementById("mobileTriggers");
-    if (!desktopContainer || !mobileContainer) return;
     desktopContainer.innerHTML = "";
     mobileContainer.innerHTML = "";
-    
     for (let i = 1; i <= 10; i++) {
       const dBtn = document.createElement("div");
       dBtn.className = "level-btn";
       dBtn.setAttribute("data-level", i);
       dBtn.innerHTML = `<i class="fas fa-tag"></i> ${i}`;
-      dBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        setActiveTier(i);
-      });
+      dBtn.addEventListener("click", () => setActiveTier(i));
       desktopContainer.appendChild(dBtn);
-      
       const mBtn = document.createElement("div");
       mBtn.className = "mobile-tier-btn";
       mBtn.setAttribute("data-level", i);
       mBtn.innerHTML = `<i class="fas fa-tag"></i> ${i}`;
-      mBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        setActiveTier(i);
-      });
+      mBtn.addEventListener("click", () => setActiveTier(i));
       mobileContainer.appendChild(mBtn);
     }
   }
 
-  loadPersistentState();
-  buildTierTriggers();
+  document.getElementById("resetAllBtn").addEventListener("click", resetCounters);
+  loadCounts();
+  buildTriggers();
   setActiveTier(1);
   updateTotalDisplay();
-  
-  const resetBtn = document.getElementById("resetAllBtn");
-  if (resetBtn) resetBtn.addEventListener("click", resetAllCountersAndClaims);
 </script>
 </body>
 </html>
